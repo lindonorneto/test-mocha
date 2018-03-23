@@ -4,7 +4,7 @@
   "description": "Javascript test with mocha",
   "main": "test.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha && istanbul cover node_modules/mocha/bin/_mocha test/test.js"
   },
   "keywords": [
     "Test",
@@ -12,7 +12,9 @@
   ],
   "author": "Lindonor Neto",
   "license": "MIT",
-  "dependencies": {
-    "mocha": "^5.0.4"
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.5",
+    "should": "^13.2.1"
   }
 }
